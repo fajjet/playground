@@ -1,8 +1,8 @@
-import Main from "./Main";
+import App from "./App";
 import ReactDOM from "react-dom";
 import React from "react";
 
 ReactDOM.render(
-  React.createElement(Main, { app: this }),
+  React.createElement(App, { app: this }),
   document.getElementById("app") || document.createElement("div")
 );

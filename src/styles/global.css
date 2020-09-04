@@ -1,0 +1,38 @@
+:root {
+  --headerHeight: 50px;
+
+  --green: #009c71;
+}
+
+#code {
+  position: fixed;
+  top: var(--headerHeight);
+  right: 0;
+  bottom: 0;
+  left: 50px;
+}
+
+.CodeMirror {
+  height: 100%;
+  padding-top: 10px;
+  font-family: Source code pro;
+}
+
+/* .CodeMirror-cursors[style="visibility: hidden;"] {
+  visibility: visible !important;
+} */
+
+.CodeMirror-cursors {
+}
+
+.CodeMirror-cursor {
+  display: block;
+  border-width: 2px !important;
+  /* transition: transform 0.3s ease;
+  transform: scale(1, 0); */
+  border-color: orange !important;
+}
+
+.CodeMirror-cursors[style="visibility: hidden;"] .CodeMirror-cursor {
+  /* transform: scale(1, 1); */
+}
